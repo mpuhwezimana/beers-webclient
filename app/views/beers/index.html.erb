@@ -1,0 +1,24 @@
+<table>
+  <tr>
+    <td>Name</td>
+    <td>Style</td>
+    <td>Hop</td>
+    <td>Yeast</td>
+    <td>Malts</td>
+    <td>Ibu</td>
+    <td>Alcohol</td>
+    <td>Blg</td>
+  </tr>
+  <% @beers.each do |beer_hash|%>
+    <tr>
+        <td><%= beer_hash["name"]%></td> 
+        <td><%= beer_hash["style"]%></td> 
+        <td><%= beer_hash["hop"]%></td>
+        <td><%= beer_hash["yeast"]%></td>
+        <td><%= beer_hash["malts"]%></td>
+        <td><%= beer_hash["ibu"]%></td>
+        <td><%= beer_hash["alcohol"]%></td>
+        <td><%= beer_hash["blg"]%></td>
+    </tr>
+  <% end %>
+</table>
