@@ -1,10 +1,22 @@
-
-
-<p>Name: <%= @beer.name%></p> 
-<p>Style: <%= @beer.style%></p>
-<p>Hop: <%= @beer.hop%></p>
-<p>Yeast:<%= @beer.yeast%></p>
-<p>Malts: <%= @beer.malts%></p>
-<p>Ibu: <%= @beer.ibu%></p>
-<p>Alcohol: <%= @beer.alcohol%> </p>
-<p>Blg: <%= @beer.blg%></p>
+<table>
+  <tr>
+    <td>Name</td>
+    <td>Style</td>
+    <td>Hop</td>
+    <td>Yeast</td>
+    <td>Malts</td>
+    <td>Ibu</td>
+    <td>Alcohol</td>
+    <td>Blg</td>
+  </tr>
+  <tr>
+      <td><%= @beer.name%></td> 
+      <td><%= @beer.style%></td> 
+      <td><%= @beer.hop%></td>
+      <td><%= @beer.yeast%></td>
+      <td><%= @beer.malts%></td>
+      <td><%= @beer.ibu%></td>
+      <td><%= @beer.alcohol%></td>
+      <td><%= @beer.blg%></td>
+  </tr>
+</table>

@@ -1,0 +1,26 @@
+<h1>Create Beer</h1>
+
+<%= form_tag "/beers",  method: :post do%>
+  <%= label_tag :name %>
+  <%= text_field_tag :name %>
+
+  <%= label_tag :style %>
+  <%= text_field_tag :style %>
+
+  <%= label_tag :alcohol %>
+  <%= text_field_tag :alcohol %>
+
+  <%= label_tag :hop %>
+  <%= text_field_tag :hop %>
+
+  <%= label_tag :yeast %>
+  <%= text_field_tag :yeast %>
+
+  <%= label_tag :malts %>
+  <%= text_field_tag :ibu %>
+
+  <%= label_tag :blg %>
+  <%= text_field_tag :blg %>
+
+  <%= submit_tag "Create Beer" %>
+<% end %>
